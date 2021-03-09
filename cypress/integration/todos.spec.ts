@@ -17,5 +17,7 @@ describe('Todos', () => {
         cy.get('[data-t-todo-submit]').click();
 
         cy.get('[data-t-todo-item="0"] > p').should('contain', 'But what about that beer?');
+
+        cy.get('[data-t-todo-list').children().first().should('contain', 'But what about that beer?');
     });
 });
